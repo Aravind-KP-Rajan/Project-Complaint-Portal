@@ -1,7 +1,9 @@
 .header{
-  border: solid red 2px;
+  /* border: solid red 2px; */
+  background-color:coral;
 }
 
 .complaint-portal{
-  border: solid green 2px;
+  /* border: solid green 2px; */
+  color: white;
 }
