@@ -9,6 +9,13 @@ signup - https://www.freepik.com/icon/add_14722474#fromView=resource_detail&posi
 
 track - https://www.freepik.com/icon/search_14723143#fromView=resource_detail&position=55
 
+about us icon - https://www.freepik.com/icon/information-button_1176#fromView=keyword&page=1&position=1&uuid=35872e2d-0561-4a9e-a3d5-7f11fb6b9fed
+
+contact us icon - https://www.freepik.com/icon/contact-us_9194863#fromView=search&page=1&position=67&uuid=4930f3eb-feeb-409a-ad8a-26380de33316
+
+FAQ icon - https://www.freepik.com/icon/conversation-questions_39993#fromView=search&page=1&position=80&uuid=8bcda97e-9fd3-4e6d-9b23-a4a27c86424a
+
+
 
 images:
 
