@@ -4,109 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Complaint Portal</title>
-  <link rel="stylesheet" href="./styles css/mainpage-header.css">
-
-  <link rel="stylesheet" href="./styles css/mainpage-instruction.css">
-
-  <link rel="stylesheet" href="./styles css/mainpage-middle-section.css">
-
-  <link rel="stylesheet" href="./styles css/mainpage-images.css">
-
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="./styles css/general.css">
 </head>
-
-
 <body>
-  <div>
-    <div class="header">
-      <h1 class="complaint-portal">
-          Complaint Portal
-      </h1>
-    </div>
-  </div>
 
-  <div class="main-box-image">
-    <div class="complaint-box-image">
-      <marquee behavior="scroll" direction="left">
-        <img class="complaint-image" src="./Assets/images/complaint-box.jpg" width="1200" height="350"/>
-        <img src="./Assets/images/Kenatha kaanom sir.jpeg"width="1000" height="400"/>
-      </marquee>
-    </div>
-  </div>
-
-  <div class="instructions-container">
-    <div class="instructions">
-      <h2>INSTRUCTIONS</h2>
-    </div>
-    <div>
-      <h3 class="instructions-points">
-        <ul>
-          <li>
-            If you are new user, click on Register
-          </li>
-          <li>
-            Already have an account, click on Log-in
-          </li>
-          <li>
-            To know the status of your complaint, click on Track your complaint
-          </li>
-          <li>
-            For employee login, <a href="">Click here</a>
-          </li>
-        </ul>
-      </h3>
-    </div>
-  </div>
-
-  <div class="middle-section-container">
-
-    <div class="register-icon-container">
-      <div class="icon-container">
-        <img src="./Assets/icons/add_14722474.png" width="200px" height="200px">
-      </div>
-      <div class="button-container">
-        <a href="register-page.html">
-        <button class="icon-button">
-          Register
-        </button>
-      </a>
-      </div> 
+  <header class="header">
+    <div class="title">
+      
+      COMPLAINT PORTAL
     </div>
 
-    <div class="log-in-icon-container">
-      <div class="icon-container">
-        <img src="./Assets/icons/login_14722319.png" width="200px" height="200px">
-      </div>
-      <div class="button-container">
-        <a href="./log-in-page.html">
-          <button class="icon-button">
-            Log-in
-          </button>
-        </a>
+    <div class="right-section">
+      <div class="about-us-icon-container">
+        <img class="header-icon" src="./Assets/icons/about-us-icon.png" \>About Us</div>
+      <div class="header-icon-container">
+        <img class="header-icon" src="./Assets/icons/contact-us-icon.png"/>
+        
+        Contact Us</div>
+      <div class="FAQs-icon-container">
+        <img class="header-icon" src="./Assets/icons/FAQ-icon.png">
+        FAQs
       </div>
     </div>
+  </header>
 
-    <div class="track-complaint-icon-container">
-      <div class="icon-container">
-        <img src="./Assets/icons/search_14723143.png" width="200px" height="200px">
-      </div>
-      <div class="button-container">
-        <a href="./track-complaint-page.html">
-          <button class="icon-button">
-            Track your complaint
-          </button>
-        </a>
-      </div>
-    </div>
-   
-  </div>
+  <main>
+    <section class="grid-container-instructions">
+      <div class="image-container">
+        <div class="image-container-two">
+          <!-- <img class="complaint-image" src="./Assets/images/complaint-box.jpg"/> -->
 
-  
+          <img class="complaint-image" src="./Assets/images/Kenatha kaanom sir.jpeg"/>
+        </div>
+      </div>
+      <div class="instruction-container">
+        <h2>Instructions</h2>
+              <ul>
+                  <li>Create an account if you are a new user.</li>
+                  <li>Login with your credentials to file a complaint.</li>
+                  <li>Track the status of your complaint using your complaint ID.</li>
+                  <li>Ensure you provide detailed information about your issue.</li>
+                  <li>Contact support if you need any assistance.</li>
+              </ul>
+      </div>
+
+    </section>
+
+    <section class="grid-container-actions">
+      <div class="action-item">
+        <img class="actions-img" src="./Assets/icons/new-user-icon.png"/>
+        <h3>New user</h3>
+      </div>
+
+      <div class="action-item">
+        <img class="actions-img" src="./Assets/icons/login-icon.png"/>
+        <h3>Log In</h3>
+      </div>
+
+      <div class="action-item">
+        <img class="actions-img" src="./Assets/icons/track-complaint-icon.png"/>
+       <h3>Track Your Complaint</h3>
+      </div>
+
+    </section>
+  </main>
+
   
 </body>
 </html>
