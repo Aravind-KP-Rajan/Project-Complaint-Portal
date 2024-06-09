@@ -4,7 +4,7 @@ body{
   background-color: #d9d6d6;
   font-family:'Arial', sans-serif;
   height: 100vh;
-  width: 100vmax;
+  /* width: 100vw; */
   color:black;
 }
 body {
@@ -14,8 +14,7 @@ body {
 .header{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  justify-content: space-around;
   background-color: white;
   align-items: center;
   width:100% ;
@@ -34,27 +33,25 @@ body {
   width: 350px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-right: 15px;
-  text-align: center;
   flex-shrink: 0;
-
 }
 
 .about-us-icon-container,
 .header-icon-container,
 .FAQs-icon-container{
   display: flex;
-  align-items: center;
   margin-right: 2px;
   cursor: pointer;
-  position: relative;
+}
+
+.header-links{
+  text-decoration: none;
+  color: black;
 }
 
 .header-icon{
   height: 24px;
   margin-right: 5px;  
-  
 }
 
 
@@ -70,14 +67,14 @@ body {
 }
 
 .instruction-container h2{
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
   font-size: 35px;
   font-weight: 400;
 }
 
-ul {
-  margin-top: -5px;
+.instruction-container ul {
+  margin-top: 5px;
 }
 
 .instruction-container ul li{
@@ -93,14 +90,13 @@ ul {
   /* max-width: 500px; */
   height: 340px;
   /* background-color: palevioletred; */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
   background-color: white;
 
   margin-right: 100px;
   border-radius: 5px;
 }
 .image-container-two{
-  background-color: green;
   width: 580px;
   height: 320px;
   margin-left: 10px;
@@ -124,17 +120,17 @@ ul {
 } */
 
 .image-container-two {
-  /* animation: fadeIn 3s; */
+  animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;
   /* -moz-animation: fadeIn 3s;
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s; */
 }
-/* 
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
-} */
+}
 
 /* @-moz-keyframes fadeIn {
   0% { opacity: 0; }
@@ -158,7 +154,7 @@ ul {
 
 
 .instruction-container{
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   background-color: white;
   width: 600px;
   /* max-width: 1000px; */
@@ -181,7 +177,7 @@ ul {
   text-align: center;
   /* background-color: #f4f4f4; */
   /* background-color: palevioletred; */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -195,7 +191,7 @@ ul {
 
 .about-us-container{
   margin-top: 20px;
-  height: 300px;
+  height: 650px;
   background-color:white;
   display: flex;
   flex-direction: column;
@@ -204,34 +200,90 @@ ul {
 }
 
 .about-us-container h2{
-  padding-top: 20px;
-  padding-left: 20px;
-  font-size:35px;
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 35px;
+  font-weight: 400;
+}
+.welcome-note-about-us{
+  line-height: 1.8;
 }
 
 .about-us-container ul li{
   line-height: 1.8;
+  margin-left: 20px;
 }
 
 .contact-us-container{
-  height: 200px;
+  height: 190px;
   background-color:red;
   margin-top: 20px;
   background-color: transparent;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
+}
+
+.contact-us-container h2{
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 35px;
+  font-weight: 400;
 }
 
 .contact-actions-container{
   text-align: center;
+  
 }
 
+.contact-us-text h2{
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 35px;
+  font-weight: 400;
+}
 
 .contact-us-icon{
   height: 100px;
 }
 
+.FAQ-container{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  width: auto;
+  overflow: auto;
+}
 
+.FAQ-title h2{
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.FAQs-and-answers ul li{
+  list-style-type:decimal;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.footer-container{
+  display: flex;
+  background-color: transparent;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-details{
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.6;
+
+}
 
