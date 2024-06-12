@@ -17,7 +17,6 @@ body {
   justify-content: space-around;
   background-color: white;
   align-items: center;
-  width:100% ;
 }
 
 .title{
@@ -26,22 +25,27 @@ body {
   padding: 10px;
   font-family:'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
   color: gray;
-
+  max-width: fit-content;
+  overflow:visible;
+  
 }
 
 .right-section{
   width: 350px;
   display: flex;
   justify-content: space-between;
-  flex-shrink: 0;
+/*   flex-shrink: 0;
+ */
 }
 
 .about-us-icon-container,
 .header-icon-container,
 .FAQs-icon-container{
   display: flex;
+  align-items: center;
   margin-right: 2px;
   cursor: pointer;
+  
 }
 
 .header-links{
@@ -164,15 +168,30 @@ body {
 
 .grid-container-actions{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
+  /* grid-template-columns: repeat(auto-fit, 400px); */
+  grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr) ); */
-  grid-gap: 10px;
+  column-gap: 10px;
   justify-content: center;
   margin-top: 15px;
 }
 
+@media(max-width: 829px){
+  .grid-container-actions  {     grid-template-columns: 1fr;
+    /* width: 100vw; */
+  }
+  .action-item{
+    margin: 10px;
+  }
+}
+
+@media (min-width: 830px) and(max-width: 1239px) {
+  .grid-container-actions{     grid-template-columns: 1fr 1fr 1fr;
+  }
+  }
+
+
 .action-item{
-  width: 400px;
   padding-top: 10px;
   text-align: center;
   /* background-color: #f4f4f4; */
@@ -181,6 +200,7 @@ body {
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
+ 
 }
 
 .actions-img{
