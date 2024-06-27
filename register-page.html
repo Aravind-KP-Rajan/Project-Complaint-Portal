@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+
+  <link rel="stylesheet" href="./styles css/register-page.css">
+</head>
+<body>
+  <form>
+    <!-- <table>
+      <tr>
+        <td>Username</td>
+        <td><input type="text" placeholder="Username"/></td>
+      </tr>
+    </table> -->
+
+    <!-- <h1>Registartion form</h1>
+    <form action="#" method="get">
+      <table>
+
+        <tr>
+          <td>Name</td>
+          <td>
+            <input type="text" placeholder="Enter your name">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Mobile number</td>
+          <td>
+            <input type="number" placeholder="enter your number" value="name">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Email</td>
+          <td>
+          <input type="email" placeholder="email">
+        </td> 
+        </tr>
+
+        <tr>
+          <td>DOB</td>
+          <td><input type="date"></td>
+        </tr>
+
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="gender" value="male"/>Male
+            <input type="radio" name="gender" value="female"/>Female
+            <input type="radio" name="gender" value="others"/>others
+          </td>
+        </tr>
+
+        
+        <tr>
+          <td>Password</td>
+          <td>
+            <input type="password" name="pwd">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Address</td>
+          <td><textarea cols="20" rows="7" name="Address" placeholder="Type your Address"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>State</td>
+          <td>
+            <select name="state">
+              <option>Tamil nadu</option>
+              <option>Kerala</option>
+              <option>Karanataka</option>
+              <option>Andhra Pradesh</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="submit">
+          </td>
+            <td>
+            <input type="Reset">
+          </td>
+        </tr>
+      </table>
+
+
+  </form> -->
+  
+    <div class="signup-container">
+        <h2>Register User</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="number">Mobile Number:</label>
+              <input type="number" id="number" name="number" required>
+
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+
+
+</body>
+</html>

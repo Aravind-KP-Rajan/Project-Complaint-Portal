@@ -20,13 +20,14 @@ body {
 }
 
 .title{
+  display: flex;
+  flex-shrink: 0;
   font-size: 40px;
   font-weight:600;
   padding: 10px;
   font-family:'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
   color: gray;
-  max-width: fit-content;
-  overflow:visible;
+  width: 350px;
   
 }
 
@@ -42,6 +43,7 @@ body {
 .header-icon-container,
 .FAQs-icon-container{
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   margin-right: 2px;
   cursor: pointer;
@@ -63,12 +65,34 @@ body {
 .grid-container-instructions{
   display: grid;
   /* grid-template-columns: 500px 500px; */
-  grid-template-columns: repeat(auto-fit, 600px);
+  /* grid-template-columns: repeat(auto-fit, 600px); */
+  grid-template-columns: 1fr 1fr;
   margin-top: 20px;
-  justify-content: center;
-  grid-gap: 10px;
-  
+  /* column-gap: 10px; */
+  justify-content: space-evenly;
+  border: 2px solid red;
 }
+
+@media(max-width: 1100px){
+  .grid-container-instructions
+    {     grid-template-columns: 1fr;
+    /* width: 100vw; */
+  }
+}
+
+@media (min-width: 1101px) and(max-width: 1239px) {
+  .grid-container-instructions
+  {    
+     grid-template-columns: 1fr;
+  }
+  }
+
+  @media (min-width: 1100px){
+    .grid-container-instructions{
+      overflow: scroll;
+    }
+  }
+
 
 .instruction-container h2{
   margin-left: 20px;
@@ -90,6 +114,7 @@ body {
 
 
 .image-container{
+  border: 2px solid green;
   width: 600px;
   /* max-width: 500px; */
   height: 340px;
@@ -164,6 +189,7 @@ body {
   /* max-width: 1000px; */
   height: 340px;
   border-radius: 5px;
+  border: 2px solid green;
 }
 
 .grid-container-actions{
