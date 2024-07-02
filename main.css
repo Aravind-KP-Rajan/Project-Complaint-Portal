@@ -9,16 +9,33 @@ body{
 }
 
 .complaint-box-image{
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .main-container{
   background-color: white;
+  
 }
 
 /* h2{
   font-style: italic;
 } */
+
+.box-image{
+  height: 200px;
+  width: 200px;
+  background-color: #777;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.carousel.slide {
+  border-radius: 5px;
+}
+
+.carousel-box{
+  border-radius: 15px;
+}
 
 /* Actions Styles */
 .actions {
