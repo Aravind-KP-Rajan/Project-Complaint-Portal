@@ -2,10 +2,68 @@ body{
   background-color: lightgray;
 }
 
-.img-container{
 
+.logInButton > a{
+  text-decoration: none;
+  color: white;
 }
 
 .complaint-box-image{
   border-radius: 5px;
+}
+
+.main-container{
+  background-color: white;
+}
+
+/* h2{
+  font-style: italic;
+} */
+
+/* Actions Styles */
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-item {
+  text-align: center;
+  flex-basis: 30%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.action-item a {
+  text-decoration: none; /* To remove underline from anchor tag */
+  color: inherit;
+}
+
+.action-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.action-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.action-item:hover {
+  transform: scale(1.05);
+  background-color: #e0f7fa;
+}
+
+.action-item:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #777;
 }
