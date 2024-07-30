@@ -13,6 +13,8 @@
 
   
   <nav class="navbar navbar-expand-lg sticky-top navbar-css">
+
+
     <div class="container-fluid">
       <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
       <img src="./Assets/icons/list.svg" class="hamburger-icon-nav">
@@ -26,7 +28,7 @@
             <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="#scroll-about">About</a>
+            <a class="nav-link active text-light" href="./Actions/about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-light" href="#" >Contact</a>
@@ -37,7 +39,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false">More</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Authority Login</a></li>
+              <li class="fieldset disabled"><a class="dropdown-item disabled" href="#">Authority Login</a></li>
               <li><a class="dropdown-item" href="#">Administrative Members</a></li>
               <li><a class="dropdown-item" href="#">Press Release</a></li>
             </ul>
@@ -56,11 +58,11 @@
   <h2 class="text-center my-2">Register your Complaint</h2>
 </div>
 
-<div class="container mt-4 ">
+<div class="container mt-4 mb-4 ">
   <form class="row g-3">
     <div class="col-md-6">
       <label for="inputName" class="form-label">Name</label>
-      <input type="email" class="form-control" id="inputEmail4">
+      <input type="email" class="form-control" id="inputEmail4" required>
     </div>
     <div class="col-md-4">
       <label for="inputSalutation" class="form-label">Salutation</label>
@@ -81,11 +83,11 @@
     </div>
     <div class="col-12">
       <label for="inputAddress" class="form-label">Address (Where the complaint need to be resolved)</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Enter full address">
+      <input type="text" class="form-control" id="inputAddress" placeholder="Enter full address" required>
     </div>
     <div class="col-12">
       <label for="inputAddress2" class="form-label">Re-enter the address</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Address">
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Address" required>
     </div>
 
     <div class="col-md-4">
@@ -103,27 +105,38 @@
       </select>
     </div>
     <div class="col-md-4">
-      <label for="inputCity" class="form-label">City</label>
+      <label for="inputCity"  class="form-label">City/Town</label>
       <input type="text" class="form-control" id="inputCity">
     </div>
     <div class="col-md-2">
       <label for="inputZip" class="form-label">Pin Code</label>
-      <input type="text" class="form-control" id="inputZip">
+      <input type="number" class="form-control" id="inputZip" required>
     </div>
 
     <div>
-      <label for="inputComplaint" class="form-label">Say details of your complaint</label>
+      <label for="inputComplaint" class="form-label">Write details of your complaint</label>
       <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-        <label for="floatingTextarea2">Comments</label>
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+        <label for="floatingTextarea2">Complaint details</label>
       </div>
   </div>
 
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button type="submit" class="btn btn-primary">Submit </button>
     </div>
   </form>
   </div>
+
+  <footer class="py-3 mt-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+    </ul>
+    <p class="text-center text-light">© 2024 Complaint portal, Inc</p>
+  </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
